@@ -31,7 +31,7 @@ body{
   position: relative;
   width: 23rem;
   height: 23rem;
-  border:1px solid black;
+  border:2px solid gray;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -203,4 +203,89 @@ body{
   -moz-transform:translate(-100%,-50%) rotateZ(270deg);
   -ms-transform:translate(-100%,-50%) rotateZ(270deg);
   -o-transform:translate(-100%,-50%) rotateZ(270deg);
+}
+.oneOfthree{
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 5%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  top:50%;
+  left:50%;
+  width:23rem;
+  height:23rem;
+  transform-origin: right;
+  clip-path: polygon(50% -50%, 100% 50%, 50% 150%);
+}
+#option1.oneOfthree{
+  background: var(--1);
+  transform:translate(-100%,-50%);
+  -webkit-transform:translate(-100%,-50%);
+  -moz-transform:translate(-100%,-50%);
+  -ms-transform:translate(-100%,-50%);
+  -o-transform:translate(-100%,-50%);
+}
+#option2.oneOfthree{
+  background: var(--2);
+  transform:translate(-100%,-50%) rotateZ(120deg);
+  -webkit-transform:translate(-100%,-50%) rotateZ(120deg);
+  -moz-transform:translate(-100%,-50%) rotateZ(120deg);
+  -ms-transform:translate(-100%,-50%) rotateZ(120deg);
+  -o-transform:translate(-100%,-50%) rotateZ(120deg);
+}
+#option3.oneOfthree{
+  background: var(--3);
+  transform:translate(-100%,-50%) rotateZ(240deg);
+  -webkit-transform:translate(-100%,-50%) rotateZ(240deg);
+  -moz-transform:translate(-100%,-50%) rotateZ(240deg);
+  -ms-transform:translate(-100%,-50%) rotateZ(240deg);
+  -o-transform:translate(-100%,-50%) rotateZ(240deg);
+}
+.oneOftwo{
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 5%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  top:50%;
+  left:0%;
+  width:23rem;
+  height:24rem;
+  transform-origin: right;
+}
+#option1.oneOftwo{
+  background:var(--1);
+  transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+  -moz-transform:translate(-50%,-50%);
+  -ms-transform:translate(-50%,-50%);
+  -o-transform:translate(-50%,-50%);
+}
+#option2.oneOftwo{
+  background:var(--2);
+  transform:translate(-50%,-50%) rotateZ(180deg);
+  -webkit-transform:translate(-50%,-50%) rotateZ(180deg);
+  -moz-transform:translate(-50%,-50%) rotateZ(180deg);
+  -ms-transform:translate(-50%,-50%) rotateZ(180deg);
+  -o-transform:translate(-50%,-50%) rotateZ(180deg);
+}
+.oneOfone{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  top:0%;
+  left:0%;
+  width:23rem;
+  height:24rem;
+  transform-origin: center;
+}
+#option1.oneOfone{
+  background:var(--1);
 }
