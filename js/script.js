@@ -3,7 +3,7 @@ const wheel = $.querySelector('#wheel-container')
 const numbers = $.querySelectorAll('.info div')
 const insertList = $.querySelector('#insertInfo')
 const insertInfo = $.querySelectorAll('#insertInfo input')
-
+const btn = $.querySelector('#rotateBtn')
 
 
 numbers.forEach(item =>{
@@ -78,3 +78,11 @@ insertInfo.forEach((item,index) =>{
     dist.textContent = target.value
     })
 })
+
+const rotate = (e) =>{
+  const randNum = Math.floor(Math.random() * 360)
+  wheel.style.transform = '0'
+  wheel.style.transform += "" + randNum
+}
+
+btn.addEventListener('click',rotate)
