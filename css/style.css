@@ -1,9 +1,9 @@
 :root{
-  --1 :#ffa220;
+  --1 :#ff4646;
   --2 :#2bd111;
   --3 :#f0e84e;
   --4 :#2af0cf;
-  --5 :#ff4646;
+  --5 :#ffa220;
   --6 :#5566aa;
 }
 * {
@@ -44,11 +44,11 @@ body{
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   overflow: hidden;
-  transition:transform 1s ease-out;
-  -webkit-transition:transform 1s ease-out;
-  -moz-transition:transform 1s ease-out;
-  -ms-transition:transform 1s ease-out;
-  -o-transition:transform 1s ease-out;
+  transition:transform 1.5s ease-out;
+  -webkit-transition:transform 1.5s ease-out;
+  -moz-transition:transform 1.5s ease-out;
+  -ms-transition:transform 1.5s ease-out;
+  -o-transition:transform 1.5s ease-out;
   user-select: none;
 }
 .oneOfsix{
@@ -393,4 +393,22 @@ body{
 .info div.active{
   background:rgb(56, 93, 255);
   color:white;
+}
+#rotateRange{
+  margin: 0;
+  padding: 0;
+  transform:rotateZ(0deg);
+  -webkit-transform:rotateZ(0deg);
+  -moz-transform:rotateZ(0deg);
+  -ms-transform:rotateZ(0deg);
+  -o-transform:rotateZ(0deg);
+  writing-mode: bt-lr;
+  -webkit-appearance: slider-vertical;
+  height: 100%;
+  width: 10px;
+  transition:all 2s;
+}
+#rotateRange::-webkit-slider-thumb,#rotateRange::-moz-range-thumb,#rotateRange::-ms-thumb{
+  padding: 10px;
+
 }
